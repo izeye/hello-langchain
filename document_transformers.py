@@ -14,3 +14,6 @@ text_splitter = RecursiveCharacterTextSplitter(
 texts = text_splitter.create_documents([state_of_the_union])
 print(texts[0])
 print(texts[1])
+
+output = text_splitter.split_text(state_of_the_union)[:2]
+print(output)
